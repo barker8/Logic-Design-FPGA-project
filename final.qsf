@@ -1,0 +1,106 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 12:48:43  July 27, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		final_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY final
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:48:43  JULY 27, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name VHDL_FILE project.vhd
+set_global_assignment -name VHDL_FILE final.vhd
+set_global_assignment -name VHDL_FILE fan_engine.vhd
+set_global_assignment -name VHDL_FILE cont.vhd
+set_global_assignment -name VHDL_FILE bakar.vhd
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N2 -to clk
+set_location_assignment PIN_G26 -to rest
+set_location_assignment PIN_N25 -to switch
+set_location_assignment PIN_N26 -to fan_di
+set_location_assignment PIN_V1 -to movement[0]
+set_location_assignment PIN_V2 -to movement[1]
+set_location_assignment PIN_AE22 -to green_led[0]
+set_location_assignment PIN_AF22 -to green_led[1]
+set_location_assignment PIN_W19 -to green_led[2]
+set_location_assignment PIN_V18 -to green_led[3]
+set_location_assignment PIN_U18 -to green_led[4]
+set_location_assignment PIN_U17 -to green_led[5]
+set_location_assignment PIN_AA20 -to green_led[6]
+set_location_assignment PIN_Y18 -to green_led[7]
+set_location_assignment PIN_AE23 -to red_led[0]
+set_location_assignment PIN_AF23 -to red_led[1]
+set_location_assignment PIN_AB21 -to red_led[2]
+set_location_assignment PIN_AC22 -to red_led[3]
+set_location_assignment PIN_AD22 -to red_led[4]
+set_location_assignment PIN_AD23 -to red_led[5]
+set_location_assignment PIN_AD21 -to red_led[6]
+set_location_assignment PIN_AC21 -to red_led[7]
+set_location_assignment PIN_AA14 -to red_led[8]
+set_location_assignment PIN_Y13 -to red_led[9]
+set_location_assignment PIN_AA13 -to red_led[10]
+set_location_assignment PIN_AC14 -to red_led[11]
+set_location_assignment PIN_AD15 -to red_led[12]
+set_location_assignment PIN_AE15 -to red_led[13]
+set_location_assignment PIN_AF13 -to red_led[14]
+set_location_assignment PIN_AE13 -to red_led[15]
+set_location_assignment PIN_D25 -to fan[0]
+set_location_assignment PIN_J22 -to fan[1]
+set_location_assignment PIN_F26 -to clk_divided
+set_location_assignment PIN_K25 -to fl[0]
+set_location_assignment PIN_K26 -to fl[1]
+set_location_assignment PIN_M22 -to bl[0]
+set_location_assignment PIN_M23 -to bl[1]
+set_location_assignment PIN_M19 -to fr[0]
+set_location_assignment PIN_M20 -to fr[1]
+set_location_assignment PIN_N20 -to br[0]
+set_location_assignment PIN_M21 -to br[1]
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
